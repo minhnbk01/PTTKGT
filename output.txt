@@ -1,0 +1,157 @@
+=== DO AN PTTKGT - CASE STUDY 5: QUAN LY KHO ===
+
+TEST CASE 1
+So luong hang (n): 9
+Suc chua moi thung (C): 40
+Trong luong cac mon hang: 24 22 20 14 12 8 8 6 6 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+
+
+TEST CASE 2
+So luong hang (n): 9
+Suc chua moi thung (C): 20
+Trong luong cac mon hang: 12 11 10 7 6 4 4 3 3 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+
+
+TEST CASE 3
+So luong hang (n): 6
+Suc chua moi thung (C): 12
+Trong luong cac mon hang: 7 6 4 3 2 2 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 3 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 3 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 2 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 2 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 2 thung.
+
+
+TEST CASE 4
+So luong hang (n): 5
+Suc chua moi thung (C): 10
+Trong luong cac mon hang: 2 3 4 5 6 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 2 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 2 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 2 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 2 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 2 thung.
+
+
+TEST CASE 5
+So luong hang (n): 6
+Suc chua moi thung (C): 15
+Trong luong cac mon hang: 5 5 5 5 5 5 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 2 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 2 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 2 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 2 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 2 thung.
+
+
+TEST CASE 6
+So luong hang (n): 4
+Suc chua moi thung (C): 10
+Trong luong cac mon hang: 1 2 3 4 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 1 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 1 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 1 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 1 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 1 thung.
+
+
+TEST CASE 7
+So luong hang (n): 7
+Suc chua moi thung (C): 20
+Trong luong cac mon hang: 10 9 8 7 6 5 4 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 3 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 3 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+
+
+TEST CASE 8
+So luong hang (n): 8
+Suc chua moi thung (C): 10
+Trong luong cac mon hang: 5 5 5 5 5 5 5 5 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 4 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+
+
+TEST CASE 9
+So luong hang (n): 6
+Suc chua moi thung (C): 10
+Trong luong cac mon hang: 8 8 4 4 4 4 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 4 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+
+
+TEST CASE 10
+So luong hang (n): 7
+Suc chua moi thung (C): 10
+Trong luong cac mon hang: 9 8 2 2 2 2 2 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 3 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 3 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+
+
+TEST CASE 11
+So luong hang (n): 8
+Suc chua moi thung (C): 10
+Trong luong cac mon hang: 6 6 6 6 4 4 4 4 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 4 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+
+
+TEST CASE 12
+So luong hang (n): 10
+Suc chua moi thung (C): 20
+Trong luong cac mon hang: 11 10 9 8 7 6 5 4 3 2 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 4 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+
+
+TEST CASE 13
+So luong hang (n): 9
+Suc chua moi thung (C): 15
+Trong luong cac mon hang: 8 7 6 5 4 3 2 2 2 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 3 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 3 thung
+[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
+[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+
