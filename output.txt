@@ -1,157 +1,715 @@
 === DO AN PTTKGT - CASE STUDY 5: QUAN LY KHO ===
 
 TEST CASE 1
-So luong hang (n): 9
-Suc chua moi thung (C): 40
-Trong luong cac mon hang: 24 22 20 14 12 8 8 6 6 
+So luong hang (n): 6
+Suc chua moi thung (C): 10
+Trong luong cac mon hang: 6 6 6 4 4 4 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 3 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 3 thung
+[+] 3. First Fit Decreasing (FFD) dung: 3 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 3 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 3 thung
 => KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
 
 
 TEST CASE 2
-So luong hang (n): 9
-Suc chua moi thung (C): 20
-Trong luong cac mon hang: 12 11 10 7 6 4 4 3 3 
+So luong hang (n): 14
+Suc chua moi thung (C): 43
+Trong luong cac mon hang: 25 6 13 40 23 38 29 7 43 41 6 5 5 17 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 8 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 8 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 8 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 8 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 8 thung.
 
 
 TEST CASE 3
-So luong hang (n): 6
-Suc chua moi thung (C): 12
-Trong luong cac mon hang: 7 6 4 3 2 2 
+So luong hang (n): 16
+Suc chua moi thung (C): 45
+Trong luong cac mon hang: 20 6 24 13 38 42 15 14 8 3 30 31 35 36 38 19 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 3 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 3 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 2 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 2 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 2 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 10 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 10 thung
+[+] 3. First Fit Decreasing (FFD) dung: 9 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 9 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 9 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 9 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 9 thung.
 
 
 TEST CASE 4
-So luong hang (n): 5
-Suc chua moi thung (C): 10
-Trong luong cac mon hang: 2 3 4 5 6 
+So luong hang (n): 16
+Suc chua moi thung (C): 45
+Trong luong cac mon hang: 30 11 33 2 18 44 12 5 22 9 22 18 16 20 16 41 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 2 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 2 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 2 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 2 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 2 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 8 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 8 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 7 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 7 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 7 thung.
 
 
 TEST CASE 5
-So luong hang (n): 6
-Suc chua moi thung (C): 15
-Trong luong cac mon hang: 5 5 5 5 5 5 
+So luong hang (n): 14
+Suc chua moi thung (C): 46
+Trong luong cac mon hang: 1 26 14 44 29 12 40 22 8 29 36 17 20 39 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 2 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 2 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 2 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 2 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 2 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 9 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 9 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 7 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 7 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 7 thung.
 
 
 TEST CASE 6
-So luong hang (n): 4
-Suc chua moi thung (C): 10
-Trong luong cac mon hang: 1 2 3 4 
+So luong hang (n): 14
+Suc chua moi thung (C): 34
+Trong luong cac mon hang: 1 4 25 9 31 16 6 27 10 23 24 30 17 15 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 1 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 1 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 1 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 1 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 1 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 8 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 8 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 7 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 7 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 7 thung.
 
 
 TEST CASE 7
-So luong hang (n): 7
-Suc chua moi thung (C): 20
-Trong luong cac mon hang: 10 9 8 7 6 5 4 
+So luong hang (n): 9
+Suc chua moi thung (C): 41
+Trong luong cac mon hang: 13 16 28 10 20 18 14 29 20 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 3 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 3 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 5 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 5 thung
+[+] 3. First Fit Decreasing (FFD) dung: 5 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 5 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 5 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 5 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 5 thung.
 
 
 TEST CASE 8
-So luong hang (n): 8
-Suc chua moi thung (C): 10
-Trong luong cac mon hang: 5 5 5 5 5 5 5 5 
+So luong hang (n): 19
+Suc chua moi thung (C): 30
+Trong luong cac mon hang: 5 26 15 17 8 30 2 1 16 3 17 29 30 1 29 22 21 26 1 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 4 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 12 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 12 thung
+[+] 3. First Fit Decreasing (FFD) dung: 12 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 12 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 11 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 11 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 11 thung.
 
 
 TEST CASE 9
-So luong hang (n): 6
-Suc chua moi thung (C): 10
-Trong luong cac mon hang: 8 8 4 4 4 4 
+So luong hang (n): 13
+Suc chua moi thung (C): 25
+Trong luong cac mon hang: 13 1 3 2 5 13 9 3 4 20 23 19 4 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 4 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 5 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 5 thung
+[+] 3. First Fit Decreasing (FFD) dung: 5 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 5 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 5 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 5 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 5 thung.
 
 
 TEST CASE 10
-So luong hang (n): 7
-Suc chua moi thung (C): 10
-Trong luong cac mon hang: 9 8 2 2 2 2 2 
+So luong hang (n): 18
+Suc chua moi thung (C): 23
+Trong luong cac mon hang: 12 4 11 8 12 15 19 17 8 12 20 17 22 18 3 16 19 9 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 3 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 3 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 13 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 13 thung
+[+] 3. First Fit Decreasing (FFD) dung: 12 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 12 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 12 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 12 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 12 thung.
 
 
 TEST CASE 11
-So luong hang (n): 8
-Suc chua moi thung (C): 10
-Trong luong cac mon hang: 6 6 6 6 4 4 4 4 
+So luong hang (n): 11
+Suc chua moi thung (C): 49
+Trong luong cac mon hang: 16 22 42 31 3 40 35 14 34 28 17 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 4 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 7 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 7 thung
+[+] 3. First Fit Decreasing (FFD) dung: 7 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 7 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 7 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 7 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 7 thung.
 
 
 TEST CASE 12
-So luong hang (n): 10
-Suc chua moi thung (C): 20
-Trong luong cac mon hang: 11 10 9 8 7 6 5 4 3 2 
+So luong hang (n): 16
+Suc chua moi thung (C): 22
+Trong luong cac mon hang: 8 19 14 12 22 18 11 15 19 3 9 16 10 3 6 7 
 
-[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
-[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 4 thung
-=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 10 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 9 thung
+[+] 3. First Fit Decreasing (FFD) dung: 9 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 9 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 9 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 9 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 9 thung.
 
 
 TEST CASE 13
+So luong hang (n): 7
+Suc chua moi thung (C): 33
+Trong luong cac mon hang: 14 24 12 17 32 19 6 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 5 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 5 thung
+[+] 3. First Fit Decreasing (FFD) dung: 4 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 4 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 4 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+
+
+TEST CASE 14
+So luong hang (n): 12
+Suc chua moi thung (C): 27
+Trong luong cac mon hang: 12 23 19 8 12 26 22 8 25 6 14 25 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 8 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 9 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 8 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 8 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 8 thung.
+
+
+TEST CASE 15
 So luong hang (n): 9
-Suc chua moi thung (C): 15
-Trong luong cac mon hang: 8 7 6 5 4 3 2 2 2 
+Suc chua moi thung (C): 40
+Trong luong cac mon hang: 5 18 31 9 13 26 17 17 37 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 5 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 5 thung
+[+] 3. First Fit Decreasing (FFD) dung: 5 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 5 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 5 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 5 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 5 thung.
+
+
+TEST CASE 16
+So luong hang (n): 11
+Suc chua moi thung (C): 47
+Trong luong cac mon hang: 28 2 7 20 24 30 20 34 33 33 9 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 7 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 7 thung
+[+] 3. First Fit Decreasing (FFD) dung: 7 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 7 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+
+
+TEST CASE 17
+So luong hang (n): 18
+Suc chua moi thung (C): 38
+Trong luong cac mon hang: 2 22 11 19 22 9 34 2 27 22 5 27 24 22 8 34 25 13 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 11 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 11 thung
+[+] 3. First Fit Decreasing (FFD) dung: 11 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 11 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 10 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 10 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 10 thung.
+
+
+TEST CASE 18
+So luong hang (n): 13
+Suc chua moi thung (C): 47
+Trong luong cac mon hang: 26 4 34 13 17 6 45 19 18 12 10 46 36 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 7 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 7 thung
+[+] 3. First Fit Decreasing (FFD) dung: 7 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 7 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 7 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 7 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 7 thung.
+
+
+TEST CASE 19
+So luong hang (n): 13
+Suc chua moi thung (C): 45
+Trong luong cac mon hang: 43 4 9 43 18 32 16 12 11 25 4 45 9 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 7 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 7 thung
+[+] 3. First Fit Decreasing (FFD) dung: 7 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 7 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 6 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 6 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 6 thung.
+
+
+TEST CASE 20
+So luong hang (n): 12
+Suc chua moi thung (C): 39
+Trong luong cac mon hang: 22 24 8 15 15 28 16 2 19 4 23 3 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 6 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 6 thung
+[+] 3. First Fit Decreasing (FFD) dung: 5 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 5 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 4 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+
+
+TEST CASE 21
+So luong hang (n): 9
+Suc chua moi thung (C): 20
+Trong luong cac mon hang: 15 15 11 5 12 5 15 10 4 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 6 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 6 thung
+[+] 3. First Fit Decreasing (FFD) dung: 6 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 6 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 5 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 5 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 5 thung.
+
+
+TEST CASE 22
+So luong hang (n): 14
+Suc chua moi thung (C): 22
+Trong luong cac mon hang: 14 16 10 19 13 15 6 11 7 15 21 1 7 22 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 9 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 9 thung
+[+] 3. First Fit Decreasing (FFD) dung: 9 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 9 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 9 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 9 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 9 thung.
+
+
+TEST CASE 23
+So luong hang (n): 7
+Suc chua moi thung (C): 49
+Trong luong cac mon hang: 37 46 17 18 1 29 38 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 5 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 5 thung
+[+] 3. First Fit Decreasing (FFD) dung: 5 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 5 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 4 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+
+
+TEST CASE 24
+So luong hang (n): 7
+Suc chua moi thung (C): 34
+Trong luong cac mon hang: 1 5 32 33 25 2 16 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. First Fit Decreasing (FFD) dung: 4 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 4 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 4 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+
+
+TEST CASE 25
+So luong hang (n): 5
+Suc chua moi thung (C): 37
+Trong luong cac mon hang: 37 15 32 13 34 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. First Fit Decreasing (FFD) dung: 4 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 4 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 4 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 4 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 4 thung.
+
+
+TEST CASE 26
+So luong hang (n): 14
+Suc chua moi thung (C): 36
+Trong luong cac mon hang: 31 22 30 14 19 16 7 8 26 30 20 12 1 6 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 8 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 8 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 7 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 7 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 7 thung.
+
+
+TEST CASE 27
+So luong hang (n): 5
+Suc chua moi thung (C): 28
+Trong luong cac mon hang: 15 9 23 3 20 
 
 [+] 1. Thuat toan Tham Lam (First Fit) dung: 3 thung
 [+] 2. Thuat toan Tham Lam (Best Fit) dung: 3 thung
-[+] 3. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
-[+] 4. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+[+] 3. First Fit Decreasing (FFD) dung: 3 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 3 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 3 thung
 => KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+
+
+TEST CASE 28
+So luong hang (n): 18
+Suc chua moi thung (C): 23
+Trong luong cac mon hang: 23 14 23 17 13 3 19 16 20 5 21 15 6 18 15 7 7 10 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 13 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 12 thung
+[+] 3. First Fit Decreasing (FFD) dung: 12 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 12 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 12 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 12 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 12 thung.
+
+
+TEST CASE 29
+So luong hang (n): 19
+Suc chua moi thung (C): 30
+Trong luong cac mon hang: 1 21 17 29 14 15 16 30 2 6 21 29 13 12 20 15 6 27 12 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 11 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 11 thung
+[+] 3. First Fit Decreasing (FFD) dung: 11 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 11 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 10 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 10 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 10 thung.
+
+
+TEST CASE 30
+So luong hang (n): 5
+Suc chua moi thung (C): 45
+Trong luong cac mon hang: 8 3 17 18 9 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 2 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 2 thung
+[+] 3. First Fit Decreasing (FFD) dung: 2 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 2 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 2 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 2 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 2 thung.
+
+
+TEST CASE 31
+So luong hang (n): 17
+Suc chua moi thung (C): 38
+Trong luong cac mon hang: 31 37 15 14 22 28 34 38 35 33 9 5 25 35 32 12 30 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 13 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 13 thung
+[+] 3. First Fit Decreasing (FFD) dung: 13 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 13 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 13 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 13 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 13 thung.
+
+
+TEST CASE 32
+So luong hang (n): 13
+Suc chua moi thung (C): 26
+Trong luong cac mon hang: 11 20 16 3 22 8 14 6 7 5 10 20 13 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 7 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 7 thung
+[+] 3. First Fit Decreasing (FFD) dung: 7 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 7 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 7 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 7 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 7 thung.
+
+
+TEST CASE 33
+So luong hang (n): 13
+Suc chua moi thung (C): 42
+Trong luong cac mon hang: 12 40 32 9 22 28 13 2 12 21 40 28 22 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 9 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 8 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 8 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 8 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 8 thung.
+
+
+TEST CASE 34
+So luong hang (n): 14
+Suc chua moi thung (C): 33
+Trong luong cac mon hang: 15 21 25 17 30 33 7 28 30 5 22 23 6 1 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 9 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 9 thung
+[+] 3. First Fit Decreasing (FFD) dung: 9 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 9 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 9 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 9 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 9 thung.
+
+
+TEST CASE 35
+So luong hang (n): 6
+Suc chua moi thung (C): 24
+Trong luong cac mon hang: 8 9 20 5 21 5 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. First Fit Decreasing (FFD) dung: 4 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 4 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+
+
+TEST CASE 36
+So luong hang (n): 11
+Suc chua moi thung (C): 27
+Trong luong cac mon hang: 12 19 8 25 21 24 5 11 23 20 15 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 8 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 8 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 8 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 8 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 8 thung.
+
+
+TEST CASE 37
+So luong hang (n): 11
+Suc chua moi thung (C): 49
+Trong luong cac mon hang: 47 31 26 37 16 12 10 23 20 37 21 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 7 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 7 thung
+[+] 3. First Fit Decreasing (FFD) dung: 6 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 6 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 6 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 6 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 6 thung.
+
+
+TEST CASE 38
+So luong hang (n): 19
+Suc chua moi thung (C): 47
+Trong luong cac mon hang: 40 19 8 40 22 43 35 8 8 11 36 28 13 26 20 3 43 42 2 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 11 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 11 thung
+[+] 3. First Fit Decreasing (FFD) dung: 11 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 11 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 11 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 11 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 11 thung.
+
+
+TEST CASE 39
+So luong hang (n): 15
+Suc chua moi thung (C): 36
+Trong luong cac mon hang: 3 20 1 28 27 33 29 26 29 1 35 31 17 26 25 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 12 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 12 thung
+[+] 3. First Fit Decreasing (FFD) dung: 12 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 12 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 8 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 8 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 8 thung.
+
+
+TEST CASE 40
+So luong hang (n): 19
+Suc chua moi thung (C): 40
+Trong luong cac mon hang: 23 27 4 21 16 4 19 11 30 17 7 36 3 36 17 13 37 32 11 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 11 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 10 thung
+[+] 3. First Fit Decreasing (FFD) dung: 10 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 10 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 10 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 10 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 10 thung.
+
+
+TEST CASE 41
+So luong hang (n): 6
+Suc chua moi thung (C): 24
+Trong luong cac mon hang: 23 11 22 17 4 4 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. First Fit Decreasing (FFD) dung: 4 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 4 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 3 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 3 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 3 thung.
+
+
+TEST CASE 42
+So luong hang (n): 17
+Suc chua moi thung (C): 29
+Trong luong cac mon hang: 22 25 6 9 3 17 6 12 17 21 26 12 4 27 27 2 27 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 10 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 10 thung
+[+] 3. First Fit Decreasing (FFD) dung: 10 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 10 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 10 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 10 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 10 thung.
+
+
+TEST CASE 43
+So luong hang (n): 9
+Suc chua moi thung (C): 46
+Trong luong cac mon hang: 22 41 17 23 27 33 24 37 28 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 8 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 8 thung
+[+] 3. First Fit Decreasing (FFD) dung: 7 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 7 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 7 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 7 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 7 thung.
+
+
+TEST CASE 44
+So luong hang (n): 6
+Suc chua moi thung (C): 22
+Trong luong cac mon hang: 15 21 11 12 18 13 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 6 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 6 thung
+[+] 3. First Fit Decreasing (FFD) dung: 6 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 6 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 6 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 6 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 6 thung.
+
+
+TEST CASE 45
+So luong hang (n): 5
+Suc chua moi thung (C): 30
+Trong luong cac mon hang: 24 1 26 23 24 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 4 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 4 thung
+[+] 3. First Fit Decreasing (FFD) dung: 4 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 4 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 1 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 1 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 1 thung.
+
+
+TEST CASE 46
+So luong hang (n): 11
+Suc chua moi thung (C): 47
+Trong luong cac mon hang: 35 36 44 35 44 13 39 10 22 34 10 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 8 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 8 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 8 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 8 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 8 thung.
+
+
+TEST CASE 47
+So luong hang (n): 17
+Suc chua moi thung (C): 44
+Trong luong cac mon hang: 13 44 36 8 28 36 10 21 17 40 36 26 12 41 25 36 19 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 12 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 11 thung
+[+] 3. First Fit Decreasing (FFD) dung: 11 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 11 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 11 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 11 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 11 thung.
+
+
+TEST CASE 48
+So luong hang (n): 18
+Suc chua moi thung (C): 29
+Trong luong cac mon hang: 17 6 2 8 14 7 6 22 11 13 25 4 25 6 19 16 20 6 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 9 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 9 thung
+[+] 3. First Fit Decreasing (FFD) dung: 9 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 9 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 9 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 9 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 9 thung.
+
+
+TEST CASE 49
+So luong hang (n): 12
+Suc chua moi thung (C): 36
+Trong luong cac mon hang: 26 23 16 14 17 14 19 20 14 23 16 36 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 8 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 8 thung
+[+] 3. First Fit Decreasing (FFD) dung: 8 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 8 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 8 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 8 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 8 thung.
+
+
+TEST CASE 50
+So luong hang (n): 6
+Suc chua moi thung (C): 47
+Trong luong cac mon hang: 7 37 11 19 12 3 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 2 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 2 thung
+[+] 3. First Fit Decreasing (FFD) dung: 2 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 2 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 2 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 2 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 2 thung.
+
+
+TEST CASE 51
+So luong hang (n): 17
+Suc chua moi thung (C): 43
+Trong luong cac mon hang: 43 37 21 23 33 30 37 41 12 34 15 36 25 12 11 32 10 
+
+[+] 1. Thuat toan Tham Lam (First Fit) dung: 12 thung
+[+] 2. Thuat toan Tham Lam (Best Fit) dung: 12 thung
+[+] 3. First Fit Decreasing (FFD) dung: 12 thung
+[+] 4. Best Fit Decreasing (BFD) dung: 12 thung
+[+] 5. Thuat toan Quy Hoach Dong (DP) dung: 12 thung
+[+] 6. Thuat toan Nhanh va Can (B&B) dung: 12 thung
+=> KET LUAN CHUNG: So thung toi uu tuyet doi la: 12 thung.
 

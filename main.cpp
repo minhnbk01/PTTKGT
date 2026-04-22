@@ -7,57 +7,38 @@ class QuanLyKho {
 private: 
     int n; // Số lượng đồ vật 
     int C; // Sức chứa của 1 thùng 
-    vector<int> w; // Danh sách trọng lượng các món hàng 
+    vector<int> w; // Danh sách trọng lượng các món hàng
     int best_bins; // Kỷ lục số thùng ít nhất tìm được (Upper Bound) 
 
-    // Sắp xếp giảm dần 
-    void sapXepGiamDan(int left, int right) {
-        if (left >= right) return;
-        int pivot = w[right];
-        int i = left - 1;
-
-        for (int j = left; j < right; j++) { 
-            if (w[j] >= pivot) { 
-                i++; 
-                swap(w[i], w[j]); 
-            } 
-        } 
-        swap(w[i + 1], w[right]); 
-        int pivot_index = i + 1;
-        
-        sapXepGiamDan(left, pivot_index - 1); 
-        sapXepGiamDan(pivot_index + 1, right); 
-    } 
-
-    // THAM LAM (First Fit) 
-    int firstFit() { 
+    // THAM LAM (First Fit)
+    int firstFit(const vector<int>& weights) { 
         vector<int> danh_sach_thung; 
-        for (int i = 0; i < n; i++) { 
+        for (int i = 0; i < weights.size(); i++) { 
             bool da_xep = false; 
             for (int j = 0; j < danh_sach_thung.size(); j++) { 
-                if (danh_sach_thung[j] + w[i] <= C) { 
-                    danh_sach_thung[j] += w[i]; 
+                if (danh_sach_thung[j] + weights[i] <= C) { 
+                    danh_sach_thung[j] += weights[i]; 
                     da_xep = true; 
                     break; 
                 } 
             } 
             if (!da_xep) { 
-                danh_sach_thung.push_back(w[i]); 
+                danh_sach_thung.push_back(weights[i]); 
             } 
         } 
         return danh_sach_thung.size(); 
     } 
 
-    // THAM LAM (Best Fit) 
-    int bestFit() { 
+    // THAM LAM (Best Fit)
+    int bestFit(const vector<int>& weights) { 
         vector<int> danh_sach_thung; 
-        for (int i = 0; i < n; i++) { 
-            int khoang_trong_min = C + 1;
+        for (int i = 0; i < weights.size(); i++) { 
+            int khoang_trong_min = C+1;
             int vi_tri_thung_tot_nhat = -1; 
             
             for (int j = 0; j < danh_sach_thung.size(); j++) { 
-                if (danh_sach_thung[j] + w[i] <= C) { 
-                    int khoang_trong_con_lai = C - (danh_sach_thung[j] + w[i]); 
+                if (danh_sach_thung[j] + weights[i] <= C) { 
+                    int khoang_trong_con_lai = C - (danh_sach_thung[j] + weights[i]); 
                     if (khoang_trong_con_lai < khoang_trong_min) { 
                         khoang_trong_min = khoang_trong_con_lai; 
                         vi_tri_thung_tot_nhat = j; 
@@ -65,41 +46,70 @@ private:
                 } 
             } 
             if (vi_tri_thung_tot_nhat != -1) { 
-                danh_sach_thung[vi_tri_thung_tot_nhat] += w[i]; 
+                danh_sach_thung[vi_tri_thung_tot_nhat] += weights[i]; 
             } else { 
-                danh_sach_thung.push_back(w[i]); 
+                danh_sach_thung.push_back(weights[i]); 
             } 
         } 
         return danh_sach_thung.size(); 
     } 
 
+    
+
+    int firstFitDecreasing(const vector<int>& weights) {
+        vector<int> sorted_w = weights;
+        sort(sorted_w.rbegin(), sorted_w.rend());
+        return firstFit(sorted_w);
+    }
+
+    int bestFitDecreasing(const vector<int>& weights) {
+        vector<int> sorted_w = weights;
+        sort(sorted_w.rbegin(), sorted_w.rend());
+        return bestFit(sorted_w);
+    }
+
     // QUY HOẠCH ĐỘNG (DP - Knapsack) 
     int thuatToanQuyHoachDong() { 
+        if (n == 0) return 0;
+
         int so_thung_da_dung = 0; 
         vector<bool> da_xep_vao_thung(n, false); 
         int hang_con_lai = n; 
         
         while (hang_con_lai > 0) {
             vector<int> dp(C + 1, 0); 
-            vector<vector<bool>> truy_vet(n, vector<bool>(C + 1, false)); 
+            vector<int> truy_vet_item(C + 1, -1);
+            vector<int> truy_vet_cap(C + 1, -1);
             
             for (int i = 0; i < n; i++) { 
                 if (da_xep_vao_thung[i]) continue; 
                 for (int c = C; c >= w[i]; c--) { 
                     if (dp[c - w[i]] + w[i] > dp[c]) { 
                         dp[c] = dp[c - w[i]] + w[i]; 
-                        truy_vet[i][c] = true; 
+                        truy_vet_item[c] = i;
+                        truy_vet_cap[c] = c - w[i];
                     } 
                 } 
             } 
-            
+
+            if (dp[C] == 0) {
+                for (int i = 0; i < n; i++) {
+                    if (!da_xep_vao_thung[i]) {
+                        da_xep_vao_thung[i] = true;
+                        hang_con_lai--;
+                        so_thung_da_dung++;
+                        break;
+                    }
+                }
+                continue;
+            }
+
             int suc_chua_hien_tai = C; 
-            for (int i = n - 1; i >= 0; i--) { 
-                if (!da_xep_vao_thung[i] && truy_vet[i][suc_chua_hien_tai]) { 
-                    da_xep_vao_thung[i] = true; 
-                    suc_chua_hien_tai -= w[i]; 
-                    hang_con_lai--; 
-                } 
+            while (suc_chua_hien_tai > 0 && truy_vet_item[suc_chua_hien_tai] != -1) {
+                int item = truy_vet_item[suc_chua_hien_tai];
+                da_xep_vao_thung[item] = true;
+                hang_con_lai--;
+                suc_chua_hien_tai = truy_vet_cap[suc_chua_hien_tai];
             } 
             so_thung_da_dung++; 
         } 
@@ -136,6 +146,7 @@ private:
         int bound = tinhChanDuoi(vi_tri_hang, so_thung_hien_tai, khong_gian_thung); 
         if (bound >= best_bins) return; 
         
+        // Thử đặt vào thùng cũ
         for (int i = 0; i < so_thung_hien_tai; i++) { 
             if (khong_gian_thung[i] >= w[vi_tri_hang]) { 
                 khong_gian_thung[i] -= w[vi_tri_hang];
@@ -144,6 +155,7 @@ private:
             } 
         } 
         
+        // Mở thùng mới
         khong_gian_thung.push_back(C - w[vi_tri_hang]); 
         nhanhVaCan(vi_tri_hang + 1, so_thung_hien_tai + 1, khong_gian_thung); 
         khong_gian_thung.pop_back(); 
@@ -160,22 +172,32 @@ public:
 
     // Hàm xuất kết quả 
     void giaiQuyet() { 
-        sapXepGiamDan(0, n - 1); 
-        
-        int kq_first_fit = firstFit(); 
-        cout << "\n[+] 1. Thuat toan Tham Lam (First Fit) dung: " << kq_first_fit << " thung"; 
-        
-        int kq_best_fit = bestFit(); 
-        cout << "\n[+] 2. Thuat toan Tham Lam (Best Fit) dung: " << kq_best_fit << " thung"; 
-        
+        // 1. Tham lam trên thứ tự GỐC
+        int kq_first_fit = firstFit(w); 
+        int kq_best_fit = bestFit(w);
+
+        // 2. Tham lam trên thứ tự GIẢM DẦN (FFD, BFD)
+        int kq_ffd = firstFitDecreasing(w);
+        int kq_bfd = bestFitDecreasing(w);
+
+        // 3. Quy hoạch động
         int kq_dp = thuatToanQuyHoachDong();
-        cout << "\n[+] 3. Thuat toan Quy Hoach Dong (DP) dung: " << kq_dp << " thung"; 
-        
-        best_bins = min({ kq_first_fit, kq_best_fit, kq_dp }); 
+
+        // Upper bound tốt nhất từ tất cả heuristic + DP
+        best_bins = min({kq_first_fit, kq_best_fit, kq_ffd, kq_bfd, kq_dp});
+
+        // 4. Nhánh và Cận (dùng bản sorted cho B&B)
+        sort(w.rbegin(), w.rend());
         vector<int> khong_gian_cac_thung; 
         nhanhVaCan(0, 0, khong_gian_cac_thung); 
         
-        cout << "\n[+] 4. Thuat toan Nhanh va Can (B&B) dung: " << best_bins << " thung\n"; 
+        // In kết quả
+        cout << "\n[+] 1. Thuat toan Tham Lam (First Fit) dung: " << kq_first_fit << " thung"; 
+        cout << "\n[+] 2. Thuat toan Tham Lam (Best Fit) dung: " << kq_best_fit << " thung"; 
+        cout << "\n[+] 3. First Fit Decreasing (FFD) dung: " << kq_ffd << " thung"; 
+        cout << "\n[+] 4. Best Fit Decreasing (BFD) dung: " << kq_bfd << " thung"; 
+        cout << "\n[+] 5. Thuat toan Quy Hoach Dong (DP) dung: " << kq_dp << " thung"; 
+        cout << "\n[+] 6. Thuat toan Nhanh va Can (B&B) dung: " << best_bins << " thung\n"; 
         cout << "=> KET LUAN CHUNG: So thung toi uu tuyet doi la: " << best_bins << " thung.\n"; 
     } 
 }; 

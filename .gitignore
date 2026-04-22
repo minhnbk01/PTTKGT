@@ -1,6 +1,17 @@
 main.exe
 
+.vscode/
+.vs/
+
 .vscode/tasks.json
 .vscode/launch.json
 .vscode/settings.json
 
+main2.cpp
+main*.exe
+output2.cpp
+tester.cpp
+tester.exe
+gen_input.exe
+input2.txt
+output2.txt
