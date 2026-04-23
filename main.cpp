@@ -181,6 +181,7 @@ public:
         int kq_bfd = bestFitDecreasing(w);
 
         // 3. Quy hoạch động
+        sort(w.rbegin(), w.rend());
         int kq_dp = thuatToanQuyHoachDong();
 
         // Upper bound tốt nhất từ tất cả heuristic + DP
